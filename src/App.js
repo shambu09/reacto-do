@@ -10,7 +10,7 @@ function App() {
 		"Learn React",
 		"Gate preparation",
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra.",
-    "Test Test Test......................................"
+		"Test Test Test......................................",
 	];
 	todos = todos.map((todo, index) => {
 		return <Todo todo={todo} />;
