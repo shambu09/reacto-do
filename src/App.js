@@ -11,6 +11,7 @@ function App() {
 		"Gate preparation",
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra.",
 		"Test Test Test......................................",
+		"Test2 Test2 Test2......................................",
 	];
 	todos = todos.map((todo, index) => {
 		return <Todo todo={todo} />;
