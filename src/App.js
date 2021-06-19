@@ -9,9 +9,9 @@ function App() {
 		"Solve 2 CP problems",
 		"Learn React",
 		"Gate preparation",
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra.",
-		"Test Test Test......................................",
-		"Test2 Test2 Test2......................................",
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra. orem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque phar",
+		"Test Test Test... ",
+		"Test2 Test2 Test2.....",
 	];
 	todos = todos.map((todo, index) => {
 		return <Todo todo={todo} />;

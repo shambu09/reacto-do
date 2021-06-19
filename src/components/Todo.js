@@ -5,9 +5,11 @@ import { TiEdit } from "react-icons/ti";
 function Todo({ todo }) {
 	return (
 		<div className="todo">
-			<div className="text wrap">{todo}</div>
+			<div className="wrap text">{todo}</div>
 			<div className="icons">
 				<RiCloseCircleLine />
+			</div>
+			<div className="icons">
 				<TiEdit />
 			</div>
 		</div>
