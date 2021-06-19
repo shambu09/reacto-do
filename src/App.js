@@ -9,7 +9,7 @@ function App() {
 		"Solve 2 CP problems",
 		"Learn React",
 		"Gate preparation",
-		"asgdkashdkahsdkahdkjah dkjahasdahsdgajhdgasjd jhasgdj has gdjhag djha gsdjhagsdhadgjahsgdjhagsdhjagdsjhgadhgsajhdgdjhasgdjhagsd hgasjhdgajhsdg dkashd kahsdkahd ashdkahdkajhs kadsh kahd",
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra.",
 	];
 	todos = todos.map((todo, index) => {
 		return <Todo todo={todo} />;
