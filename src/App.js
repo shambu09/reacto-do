@@ -1,14 +1,20 @@
 import React from "react";
 import "./App.css";
-// import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
+import Todo from "./components/Todo";
 
 function App() {
-	return (
-		<div className="todo-app">
-			<TodoList />
-		</div>
-	);
+	let todos = [
+		"Read OS 20 pages",
+		"Read CN 20 pages",
+		"Solve 2 CP problems",
+		"Learn React",
+		"Gate preparation",
+		"asgdkashdkahsdkahdkjah dkjahasdahsdgajhdgasjd jhasgdj has gdjhag djha gsdjhagsdhadgjahsgdjhagsdhjagdsjhgadhgsajhdgdjhasgdjhagsd hgasjhdgajhsdg dkashd kahsdkahd ashdkahdkajhs kadsh kahd",
+	];
+	todos = todos.map((todo, index) => {
+		return <Todo todo={todo} />;
+	});
+	return <div className="todo-app">{todos}</div>;
 }
 
 export default App;
