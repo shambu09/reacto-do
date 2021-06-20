@@ -3,6 +3,12 @@
 	font-family: "Comic Sans MS", "Comic Sans";
 }
 
+body {
+	/* background: linear-gradient(to left, #ffffff -29%, #ccffff 63%); */
+	/* background: linear-gradient(to right, #f5f5f5 17%, #d3d3d3 86%); */
+	background: linear-gradient(to right, #f5f5f5 17%, #e8e8e8 86%);
+}
+
 .todo-app {
 	width: 1150px;
 	padding-left: 10%;
@@ -26,25 +32,27 @@
 	width: 100%;
 	margin-top: 2%;
 	align-items: center;
-	border: 3px;
+	border-width: 3px;
 	border-style: solid;
 	border-radius: 10px;
-	border-color: #28282b;
+	border-color: #585858;
 	padding-right: 3%;
 }
 
 .todo .text {
+	color: #404040;
 	display: table-cell;
 	vertical-align: middle;
 	padding: 1%;
 	width: 86%;
 	font-size: 90%;
-	border: 3px;
-	border-right-style: solid;
-	border-right-color: #28282b;
+	border-width: 0 3px 0 0;
+	border-style: solid;
+	border-color: #585858;
 }
 
 .icons {
+	color: #404040;
 	display: table-cell;
 	font-size: 120%;
 	padding-top: 0.5%;

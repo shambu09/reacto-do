@@ -14,7 +14,7 @@ function App() {
 		"Test2 Test2 Test2.....",
 	];
 	todos = todos.map((todo, index) => {
-		return <Todo todo={todo} />;
+		return <Todo key={index} todo={todo} />;
 	});
 	return <div className="todo-app">{todos}</div>;
 }
