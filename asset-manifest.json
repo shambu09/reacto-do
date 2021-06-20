@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reacto-do/static/css/main.6c688f91.chunk.css",
-    "main.js": "/reacto-do/static/js/main.910c786e.chunk.js",
-    "main.js.map": "/reacto-do/static/js/main.910c786e.chunk.js.map",
+    "main.css": "/reacto-do/static/css/main.57bcdac8.chunk.css",
+    "main.js": "/reacto-do/static/js/main.61f9ff43.chunk.js",
+    "main.js.map": "/reacto-do/static/js/main.61f9ff43.chunk.js.map",
     "runtime-main.js": "/reacto-do/static/js/runtime-main.6b21498e.js",
     "runtime-main.js.map": "/reacto-do/static/js/runtime-main.6b21498e.js.map",
     "static/js/2.60946829.chunk.js": "/reacto-do/static/js/2.60946829.chunk.js",
     "static/js/2.60946829.chunk.js.map": "/reacto-do/static/js/2.60946829.chunk.js.map",
     "index.html": "/reacto-do/index.html",
-    "static/css/main.6c688f91.chunk.css.map": "/reacto-do/static/css/main.6c688f91.chunk.css.map",
+    "static/css/main.57bcdac8.chunk.css.map": "/reacto-do/static/css/main.57bcdac8.chunk.css.map",
     "static/js/2.60946829.chunk.js.LICENSE.txt": "/reacto-do/static/js/2.60946829.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6b21498e.js",
     "static/js/2.60946829.chunk.js",
-    "static/css/main.6c688f91.chunk.css",
-    "static/js/main.910c786e.chunk.js"
+    "static/css/main.57bcdac8.chunk.css",
+    "static/js/main.61f9ff43.chunk.js"
   ]
 }
