@@ -1,22 +1,19 @@
 import React from "react";
 import "./App.css";
-import Todo from "./components/Todo";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
 function App() {
-	let todos = [
-		"Read OS 20 pages",
-		"Read CN 20 pages",
-		"Solve 2 CP problems",
-		"Learn React",
-		"Gate preparation",
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra. orem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque phar",
-		"Test Test Test... ",
-		"Test2 Test2 Test2.....",
-	];
-	todos = todos.map((todo, index) => {
-		return <Todo key={index} todo={todo} />;
-	});
-	return <div className="todo-app">{todos}</div>;
+
+	const form_submit = (e) => {
+		console.log(e.target.elements);
+	}
+	return (
+		<div className="todo-app">
+			<TodoForm handleSubmit={form_submit}/>
+			<TodoList />
+		</div>
+	);
 }
 
 export default App;

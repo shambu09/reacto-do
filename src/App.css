@@ -24,7 +24,27 @@ body {
 	}
 }
 
-/* Single ToDo element*/
+
+/* ToDo form element */
+input{
+	display: table-cell;
+	border: 0;
+	background-color: Transparent;
+	color: #404040;
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	outline-width: 0;
+}
+
+form .icons{
+	text-align: center;
+	width: 6%;
+}
+/* -------------------*/
+
+
+/* Single ToDo element */
 .todo {
 	display: table;
 	width: 100%;
@@ -37,7 +57,7 @@ body {
 	padding-right: 3%;
 }
 
-.todo .text {
+.text {
 	color: #404040;
 	display: table-cell;
 	vertical-align: middle;
@@ -53,7 +73,8 @@ body {
 	color: #404040;
 	display: table-cell;
 	font-size: 120%;
-	padding-top: 0.5%;
+    cursor:pointer;
+	padding-top: 0.7%;
 	padding-left: 2%;
 	text-align: right;
 	width: 3%;
@@ -77,12 +98,17 @@ body {
 
 	.icons {
 		width: 7%;
+		padding-top: 1%;
 		font-size: 100%;
 	}
 
 	.todo .text {
 		padding: 2%;
 		padding-left: 4%;
+	}
+
+	form .icons{
+		width: 18%;
 	}
 }
 /* ----------------- */
