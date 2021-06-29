@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BiPlusCircle } from "react-icons/bi";
 
 function TodoForm({ handleSubmit }) {
+	const form_submit  = useRef(null)
 	return (
 		<div>
-			<form>
+			<form  onSubmit={(e)=>{
+				e.preventDefault();
+				handleSubmit(form_submit.current)
+				}}>
 				<div className="todo">
 					<div className="text">
-						<input htmlFor="submit" placeholder="Enter task" />
+						<input ref={form_submit} placeholder="Enter task" />
 					</div>
-					<div id="submit" className="icons" onClick={handleSubmit}>
-						<BiPlusCircle htmlFor="input-todo" />
+					<div className="icons" onClick={()=>handleSubmit(form_submit.current)}>
+						<BiPlusCircle />
 					</div>
 				</div>
 			</form>
