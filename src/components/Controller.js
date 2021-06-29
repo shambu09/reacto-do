@@ -10,17 +10,17 @@ function Controller() {
 		"Test2 Test2 Test2.....",
 		"Hola, Amigos",
 		"With great power comes great responsibility",
-		"Lost in translation"
+		"Lost in translation",
 	]);
 
 	const todo_submit = (form) => {
-		const val = form.value
+		const val = form.value;
 		if (val === "") return;
 		let _todos = [val].concat(todos);
 		form.value = "";
-		setTodos(_todos);		
+		setTodos(_todos);
 	};
-	
+
 	return (
 		<div className="todo-app">
 			<TodoForm handleSubmit={todo_submit} todos={todos} />
