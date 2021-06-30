@@ -13,6 +13,12 @@ function Controller() {
 		"Lost in translation",
 	]);
 
+	const removeTodo = (i) => {
+		let _todos = todos.slice();
+		_todos.splice(i, 1);
+		setTodos(_todos);
+	};
+
 	const todo_submit = (form) => {
 		const val = form.value;
 		if (val === "") return;
@@ -24,7 +30,7 @@ function Controller() {
 	return (
 		<div className="todo-app">
 			<TodoForm handleSubmit={todo_submit} todos={todos} />
-			<TodoList todos={todos} />
+			<TodoList todos={todos} done={removeTodo} />
 		</div>
 	);
 }
