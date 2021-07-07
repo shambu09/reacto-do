@@ -25,15 +25,6 @@ body {
 	}
 }
 
-textarea {
-	border: 0;
-	background: none;
-	width: 100%;
-	height: max-content;
-	resize: none;
-	white-space: pre-wrap;
-	content: attr(data-replicated-value) " ";
-}
 
 /* ToDo form element */
 input {
