@@ -13,10 +13,16 @@ function Controller() {
 		"Lost in translation",
 	]);
 
+	const [editable, seteditable] = useState(-1);
 	const removeTodo = (i) => {
 		let _todos = todos.slice();
 		_todos.splice(i, 1);
 		setTodos(_todos);
+		seteditable(-1);
+	};
+
+	const handleEdit = (i) => {
+		seteditable(i);
 	};
 
 	const todo_submit = (form) => {
@@ -27,10 +33,23 @@ function Controller() {
 		setTodos(_todos);
 	};
 
+	const edit_submit = (value, id) =>{
+		const _todos = todos.slice();
+		_todos[id] = value;
+		setTodos(_todos);
+		seteditable(-1);
+	}
+
 	return (
 		<div className="todo-app">
 			<TodoForm handleSubmit={todo_submit} todos={todos} />
-			<TodoList todos={todos} done={removeTodo} />
+			<TodoList
+				todos={todos}
+				done={removeTodo}
+				edit={handleEdit}
+				cls={editable}
+				handleSubmit={edit_submit}
+			/>
 		</div>
 	);
 }

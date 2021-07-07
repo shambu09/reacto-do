@@ -2,10 +2,18 @@ import React from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { TiEdit } from "react-icons/ti";
 
-function Todo({ todo, done, id }) {
+function Todo({ todo, done, id, edit, cls, submit }) {
+	let _todo = todo;
 	return (
 		<div className="todo">
-			<div className="wrap text">{todo}</div>
+			<div
+				onBlur={(e) => {
+					submit(e.target.textContent, id);
+				}}
+				contentEditable={cls ? "true" : "false"}
+				className="wrap text">
+				{_todo}
+			</div>
 			<div
 				className="icons"
 				onClick={() => {
@@ -13,7 +21,11 @@ function Todo({ todo, done, id }) {
 				}}>
 				<RiCloseCircleLine />
 			</div>
-			<div className="icons">
+			<div
+				className="icons"
+				onClick={() => {
+					edit(id);
+				}}>
 				<TiEdit />
 			</div>
 		</div>

@@ -5,6 +5,7 @@
 
 body {
 	background: linear-gradient(to right, #f5f5f5 17%, #e8e8e8 86%);
+	user-select: none;
 }
 
 .todo-app {
@@ -24,9 +25,18 @@ body {
 	}
 }
 
+textarea {
+	border: 0;
+	background: none;
+	width: 100%;
+	height: max-content;
+	resize: none;
+	white-space: pre-wrap;
+	content: attr(data-replicated-value) " ";
+}
 
 /* ToDo form element */
-input{
+input {
 	display: table-cell;
 	border: 0;
 	background-color: Transparent;
@@ -37,12 +47,11 @@ input{
 	outline-width: 0;
 }
 
-form .icons{
+form .icons {
 	text-align: center;
 	width: 6%;
 }
 /* -------------------*/
-
 
 /* Single ToDo element */
 .todo {
@@ -69,11 +78,16 @@ form .icons{
 	border-color: #585858;
 }
 
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+  outline:none;
+}
+
 .icons {
 	color: #404040;
 	display: table-cell;
 	font-size: 120%;
-    cursor:pointer;
+	cursor: pointer;
 	padding-top: 0.7%;
 	padding-left: 2%;
 	text-align: right;
@@ -107,7 +121,7 @@ form .icons{
 		padding-left: 4%;
 	}
 
-	form .icons{
+	form .icons {
 		width: 18%;
 	}
 }
