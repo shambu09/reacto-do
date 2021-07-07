@@ -33,12 +33,12 @@ function Controller() {
 		setTodos(_todos);
 	};
 
-	const edit_submit = (value, id) =>{
+	const edit_submit = (value, id) => {
 		const _todos = todos.slice();
 		_todos[id] = value;
 		setTodos(_todos);
 		seteditable(-1);
-	}
+	};
 
 	return (
 		<div className="todo-app">
